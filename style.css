@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f9;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2196f3;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f6f6;
+}
+
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2196f37a;
+  z-index: 99;
+}
+
+.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.over.hidden {
+  display: none;
+}
+
+.over.show {
+  display: flex;
+}
+
+.start {
+  width: 190px;
+  height: 45px;
+  color: #FFF;
+  background: #FF5722;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  cursor: pointer;
+}
+
+
+
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  width: 1080px;
+  margin: 20px auto;
+  border: 2px solid #2196f3;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 15px;
+}
+
+@media(max-width:768px) {
+  .head {
+    width: 350px;
+  }
+}
+
+.head .name span {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.head .tries span {
+  color: #f05;
+  font-weight: bold;
+}
+
+
+.game-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+
+.game-block.no-clicked {
+  pointer-events: none;
+}
+
+.game-block .item {
+  flex: 1 0 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.game-block .item.show,
+.game-block .item.isFliped {
+  transform: rotateY(180deg);
+}
+
+.game-block .item img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.game-block .front {
+  background-color: #222;
+  line-height: 200px;
+  text-align: center;
+}
+
+.game-block .front::before {
+  content: "!";
+  font-size: 120px;
+  color: #FFF;
+  user-select: none;
+}
+
+
+.game-block .back {
+  background-color: #607d8b;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-block .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 5px solid #2196f3;
+}
+
+
+@media(max-width:768px) {
+  .game-block {
+    width: 350px;
+  }
+
+.head {
+  font-size: 15px;
+}
+
+  .game-block .item {
+    flex: 1 0 150px;
+    margin: 5px;
+  }
+}

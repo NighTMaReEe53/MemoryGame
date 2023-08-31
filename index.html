@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="image/controller.png">
+  <title>Memory Game</title>
+</head>
+
+<body oncontextmenu="return false">
+
+
+  <div class="lightbox">
+    <button class="start">Start Game</button>
+  </div>
+
+
+  <div class="over hidden">
+    <lottie-player src="https://lottie.host/666dc7d4-6959-46ac-ac5b-a9c42c003ac2/tkzDMxc2ud.json"
+      background="transparent" speed="1" style="width: 100%; height: 300px" loop autoplay></lottie-player>
+  </div>
+
+  <div class="container">
+    <div class="head">
+      <div class="name">Hello, <span></span></div>
+      <div class="count">00:00</div>
+      <div class="tries">Wrong Try : <span>0</span></div>
+    </div>
+    <div class="game-block">
+      <div class="item" data-languages="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-html-web-design-scalable-vector-graphics-world-wid-html5-icon-hd-5ab0c85c377aa0.0639325615215350682273.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-html-web-design-scalable-vector-graphics-world-wid-html5-icon-hd-5ab0c85c377aa0.0639325615215350682273.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-css3-cascading-style-sheets-computer-icons-html-emblem-5ac245f107ae31.3014101515226813290315.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-css3-cascading-style-sheets-computer-icons-html-emblem-5ac245f107ae31.3014101515226813290315.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="js">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="image/kisspng-javascript-html-logo-blog-css3-javanese-5ae02f3cb35e13.6379672315246415967347.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="js">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="image/kisspng-javascript-html-logo-blog-css3-javanese-5ae02f3cb35e13.6379672315246415967347.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="image/kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="image/kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="bootstrap">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-responsive-web-design-bootstrap-sass-cascading-sty-framework-5acb894bc4c191.9841223815232883958059.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="bootstrap">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-responsive-web-design-bootstrap-sass-cascading-sty-framework-5acb894bc4c191.9841223815232883958059.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="sass">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-responsive-web-design-sass-cascading-style-sheets-framework-5aceb5887fa3e2.5482162815234963285228.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="sass">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-responsive-web-design-sass-cascading-style-sheets-framework-5aceb5887fa3e2.5482162815234963285228.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="php">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-php-server-side-scripting-computer-software-genera-php-5adc5e792550b8.3506828915243915451529.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="php">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-php-server-side-scripting-computer-software-genera-php-5adc5e792550b8.3506828915243915451529.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-computer-icons-github-github-logo-save-icon-format-5ab0fad15af349.5031683815215479853725.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-computer-icons-github-github-logo-save-icon-format-5ab0fad15af349.5031683815215479853725.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="vue">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-vue-js-javascript-library-react-angularjs-hsv-logo-5b5ec7879de524.0972252815329381196468.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="vue">
+        <div class="face front"></div>
+        <div class="face back">
+          <img
+            src="image/kisspng-vue-js-javascript-library-react-angularjs-hsv-logo-5b5ec7879de524.0972252815329381196468.png"
+            alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="laravel">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="image/pngwing.com.png" alt="">
+        </div>
+      </div>
+      <div class="item" data-languages="laravel">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="image/pngwing.com.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio src="audio/sucess.mp3" preload="auto" id="sucess"></audio>
+  <audio src="audio/soundGame.mp3" preload="auto" id="game" loop></audio>
+  <audio src="audio/failed.mp3" preload="auto" id="failed"></audio>
+  <audio src="audio/cong.mp3" preload="auto" id="cong"></audio>
+
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
